@@ -13,8 +13,6 @@ body {
   background-color: rgb(231, 231, 231);
 }
 
-<<<<<<< Updated upstream:css/style.css
-=======
 a{
   text-decoration: none;
 }
@@ -24,15 +22,15 @@ a{
   margin-right: 20%;
   text-align: center;
 }
->>>>>>> Stashed changes:Projeto/css/style.css
 /* COMEÇO - Menu de navegação */
 
 /* COMEÇO - Navbar lateral */
 .nav {
   background-color: #0b3350;
-  border-radius: 30px;
+  border-radius: 12px;
   border: 1px;
   margin: 8px;
+  height: 56px;
 }
 
 .nav .sidenav {
@@ -75,6 +73,8 @@ a{
   cursor: pointer;
   color: white;
   margin-left: 16px;
+  position: absolute;
+  top: 15px;
 }
 
 .nav .sidenav .menu a:hover, .nav .sidenav .menu a:focus {
@@ -101,7 +101,7 @@ a{
   border: 0px;
   border-bottom: 2px solid white;
   left: 25%;
-  top: 8px;
+  top: 20px;
   color: white;
 }
 
@@ -113,11 +113,15 @@ a{
   color: #00B4CC;
 }
 
+.searchButton:focus{
+  outline: none;
+}
+
 .searchButton {
   width: 40px;
   height: 36px;
   position: absolute;
-  top: 10px;
+  top: 19px;
   left: 75.5%;
   background: transparent;
   border: 0px;
@@ -126,6 +130,7 @@ a{
   border-radius: 0 5px 5px 0;
   cursor: pointer;
   font-size: 20px;
+
 }
 /* FIM - Barra de Pesquisa */
 
@@ -202,7 +207,7 @@ a{
 /* COMEÇO - Banner */
 .banner {
   position: relative;
-  top: -75px;
+  top: -92px;
   z-index: -1;
 }
 
@@ -224,16 +229,31 @@ a{
 /* FIM - Menu de navegação */
 
 /* COMEÇO - Destaques */
-.destaques {
-  text-align: center;
-  width: 100%;
-  margin: 0 auto;
+.preco{
+  font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    padding-left: 20px;
+    position: relative;
+    bottom: 1px;
+}
+hr{
+  color: white;
+  box-shadow: 0px 0px 35px 1px rgba(0, 0, 0, 0.75);
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
+.destaques {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+
+}
 .destaques .box {
   display: inline-block;
   width: 300px;
-  min-height: 400px;
+  min-height: 420px;
   background: #0b3350;
   font-size: 20px;
   border-radius: 17px;
@@ -241,7 +261,7 @@ a{
   color: white;
   vertical-align: top;
   transition-duration: 1s;
-  margin: 100px 25px;
+  margin: 50px 25px;
 }
 
 .destaques .box:hover {
@@ -255,8 +275,6 @@ a{
 }
 /* FIM - Destaques */
 
-<<<<<<< Updated upstream:css/style.css
-=======
 /* INICIO - Footer*/
 footer{
   background-color: #0b3350;
@@ -407,16 +425,26 @@ footer{
 }
 /* FIM - Detalhes*/
 
->>>>>>> Stashed changes:Projeto/css/style.css
 /* COMEÇO - Media queries */
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 1000px) {
   .marcainbanner {
     font-size: 20px;
     top: -184px;
     left: 164px;
     color: white;
   }
-
+  .coluna{
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    text-align: center;
+    line-height: 35px;
+    font-size: 12px;
+    }
+    .row{
+      width: 100%;
+      display: inline;
+    }
   .bannerimg {
     filter: blur(4px);
     max-width: 100%;
