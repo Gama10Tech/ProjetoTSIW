@@ -9,18 +9,25 @@ html {
 }
 
 body {
-  height: 100%;
+  /*height: 100%;*/
   background-color: rgb(231, 231, 231);
 }
 
 a{
   text-decoration: none;
 }
+:focus{
+  outline: none;
+}
 /*Geral*/
 .container{
   margin-left: 20%;
   margin-right: 20%;
   text-align: center;
+}
+.width100{
+  max-width: 100%;
+  min-width: 100%;
 }
 /* COMEÇO - Menu de navegação */
 
@@ -171,7 +178,7 @@ a{
 
 .dropdown .show {
   display: block;
-  top: 125px;
+  top: 104px;
   left: 1px;
   border-radius: 15px;
 }
@@ -423,7 +430,52 @@ footer{
 .pNameDetalhes{
   text-align: left;
 }
-/* FIM - Detalhes*/
+/* FIM - Detalhes */
+
+/* INICIO - Contactos */
+.coluna50{
+  margin-top: 30px;
+  min-width: 50%; 
+  margin: 8px;
+}
+.emailcontact{
+  margin-top: 20px;
+  border-radius: 6px;
+  border: none;
+  height: 35px;
+  padding-left: 10px;
+}
+.emailcontact:focus{
+  outline: none;
+}
+.questionarea{
+  padding-top: 10px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: none;
+  padding-left: 10px;
+  resize: none;
+}
+.sendbutton{
+  width: 40%;
+  border: none;
+  background-color: #500b0b;
+  color: white;
+  border-radius: 6px;
+  height: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.mapa{
+  margin-top: 20px;
+  
+  border-radius: 100px;
+}
+.contactmargin{
+  margin-top: 30px;
+}
+/* FIM - Contactos */
 
 /* COMEÇO - Media queries */
 @media screen and (max-width: 1000px) {

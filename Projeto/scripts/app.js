@@ -24,3 +24,9 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
+
+function switchimg(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  expandImg.src = imgs.src;  
+  expandImg.parentElement.style.display = "block";
+}
