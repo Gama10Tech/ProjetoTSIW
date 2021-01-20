@@ -1,8 +1,3 @@
-// Sub-lista do menu "Produtos"
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
 // Fechar navbar ao clicar fora dela
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
