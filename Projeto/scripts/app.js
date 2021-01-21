@@ -1,3 +1,8 @@
+// Sub-lista do menu "Produtos"
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
 // Fechar navbar ao clicar fora dela
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
@@ -18,10 +23,4 @@ function openNav() {
 // Fechar a navbar
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
-}
-
-function switchimg(imgs) {
-  var expandImg = document.getElementById("expandedImg");
-  expandImg.src = imgs.src;  
-  expandImg.parentElement.style.display = "block";
 }
