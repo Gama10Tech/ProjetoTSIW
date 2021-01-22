@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+<body>
+  <nav>
+    <div class="nav">
+      <input type="text" class="searchTerm" placeholder="O que pretende procurar?">
+      <button type="submit" class="searchButton"><i class="fas fa-search"></i></button>
+      <div id="mySidenav" class="sidenav">
+        <p class="nomedaloja">Lorem Ipsum</p>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="menu">
+          <a href="#">Acerca</a>
+          <a href="#" onclick="myFunction()" class="dropbtn">Produtos</a>
+          <a href="#">Opiniões</a>
+          <a href="#">Carrinho</a>
+          <a href="#">Login</a>
+        </div>
+        <div class="socialrow">
+          <ul>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <span class="menubutton" onclick="openNav()">&#9776; </span>
+    </div>
+    <div class="dropdown">
+      <div id="myDropdown" class="dropdown-content">
+        <a href="produtos.html" class="dropdown-first">Todos</a>
+        <a href="#">Processadores</a>
+        <a href="#">Motherboards</a>
+        <a href="#">Placas gráficas</a>
+        <a href="#">Memória RAM</a>
+        <a href="#">Fonte de alimentação</a>
+        <a href="#">Caixas</a>
+        <a href="#" class="dropdown-last">Armazenamento</a>
+      </div>
+    </div>
+  </nav>
+    <main>
+        <div class="produtos">
+          <h1>Produtos</h1>
+          <a href="detalhes_produto.html">
+            <div class="box"><img src="img/produtos/rtx3090_msi.jpg">
+              <p>Placa Gráfica MSI GeForce RTX 3090</p>
+              <hr>
+              <p class="preco">1744,90€</p>
+            </div>
+          </a>
+          <a href="#">
+            <div class="box"><img src="img/produtos/i9_intel.jpg">
+              <p>Processador Intel Core i9-9900K </p>
+              <hr>
+              <p class="preco">399,00€</p>
+            </div>
+          </a>
+          <a href="#">
+            <div class="box"><img src="img/produtos/8gb_hyperx.jpg">
+              <p>RAM HyperX Predator 8GB</p>
+              <hr>
+              <p class="preco">50,50€</p>
+            </div>
+          </a>
+          <a href="#">
+            <div class="box"><img src="img/produtos/z390-a_msi.jpg">
+              <p>Motherboard MSI Z390-A</p>
+              <hr>
+              <p class="preco">114,90€</p>
+            </div>
+          </a>
+          <a href="#">
+            <div class="box"><img src="img/produtos/CoolerCPUNoctuaNH-U9S.jpg">
+              <p>Cooler CPU Noctua NH-U9S</p>
+              <hr>
+              <p class="preco">69,90€</p>
+            </div>
+          </a>
+          <a href="#">
+            <div class="box"><img src="img/produtos/msi650w.jpg">
+              <p>Fonte de Alimentação MSI MPG A650GF</p>
+              <hr>
+              <p class="preco">124,90€</p>
+            </div>
+          </a>
+          <a href="#">
+            <div class="box"><img src="img/produtos/msiRX6800_msi.jpg">
+              <p>Placa Gráfica MSI Radeon RX 6800</p>
+              <hr>
+              <p class="preco">714,90€</p>
+            </div>
+          </a>
+          <a href="#">
+            <div class="box"><img src="img/produtos/RAMCorsairVengeance RGB.jpg">
+              <p>RAM Corsair Vengeance RGB Pro</p>
+              <hr>
+              <p class="preco">99,90€</p>
+            </div>
+          </a>
+          <a href="#">
+            <div class="box"><img src="img/produtos/ryzer7_5800x.jpg">
+              <p>Processador AMD Ryzen 7 5800X</p>
+              <hr>
+              <p class="preco">472,00€</p>
+            </div>
+          </a>
+          <a href="#">
+            <div class="box"><img src="img/produtos/AsusROGCrosshair.jpg">
+              <p>Motherboard Asus ROG Crosshair VIII</p>
+              <hr>
+              <p class="preco">499,00€</p>
+            </div>
+          </a>
+
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+          <div class="row">
+          <div class="coluna">
+            <h2>Apoio ao cliente</h2>
+            <p><a href="">Pagamentos</a></p>
+            <p><a href="">Envios</a></p>
+            <p><a href="">Trocas e devoluções</a></p>
+          </div>
+          <div class="coluna">
+            <h2>Informações úteis</h2>
+            <p><a href="">Politica de privacidade</a></p>
+            <p><a href="">Termos de uso</a></p>
+            <p><a href="">Contactos</a></p>
+          </div>
+          <div class="coluna">
+            <h2>Siga-nos</h2>
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-youtube"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+          </div>
+          <div class="coluna">
+            <h2>Subscrever newsletter</h2>
+            <label>Email</label>
+            <input type="email" class="emailboxfotter" placeholder="Digite aqui o seu email">
+            <button class="subscribeboxfotter">Subscrever</button>
+          </div>
+        </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="https://kit.fontawesome.com/03e7a29ebe.js"></script>
+    <script type="text/javascript" src="scripts/app.js"></script>
+</body>
+</html>
