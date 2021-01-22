@@ -16,14 +16,25 @@ body {
 a {
   text-decoration: none;
 }
-
+:focus{
+  outline: none;
+}
+main{
+  margin-top:50px;
+  min-height: 68vh;
+}
+}
 /*Geral*/
 .container {
   margin-left: 20%;
   margin-right: 20%;
+  margin-top: 30px;
   text-align: center;
 }
-
+.width100{
+  max-width: 100%;
+  min-width: 98%;
+}
 /* COMEÇO - Menu de navegação */
 /* COMEÇO - Navbar lateral */
 .nav {
@@ -94,28 +105,25 @@ a {
 /* COMEÇO - Barra de Pesquisa */
 .searchTerm {
   width: 50%;
-  background-color: transparent;
+  background-color: white;
   padding: 5px;
   height: 20px;
+  border-radius: 11px;
   outline: none;
   position: absolute;
   border: 0px;
   border-bottom: 2px solid white;
   left: 25%;
   top: 20px;
-  color: white;
+  color: black;
 }
 
 .searchTerm::placeholder {
-  color: white;
+  color: black;
 }
 
 .searchTerm:focus {
-  color: #00B4CC;
-}
-
-.searchButton:focus {
-  outline: none;
+  color: black;
 }
 
 .searchButton {
@@ -145,8 +153,11 @@ a {
 }
 
 .dropdown {
-  position: relative;
+  position: fixed;
   display: inline-block;
+  top: 86px;
+  left: 0px;
+  z-index: 2;
 }
 
 .dropdown-content {
@@ -171,7 +182,7 @@ a {
 
 .dropdown .show {
   display: block;
-  top: 125px;
+  top: 106px;
   left: 1px;
   border-radius: 15px;
 }
@@ -246,6 +257,7 @@ hr {
 .destaques {
   text-align: center;
   width: 80%;
+  margin-top: -50px !important;
   margin: 0 auto;
 }
 
@@ -274,11 +286,45 @@ hr {
 }
 
 /* FIM - Destaques */
+/* INICIO - Produtos */
+.produtos {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.produtos .box {
+  display: inline-block;
+  width: 300px;
+  min-height: 420px;
+  background: #0b3350;
+  font-size: 20px;
+  border-radius: 17px;
+  text-align: center;
+  color: white;
+  vertical-align: top;
+  transition-duration: 1s;
+  margin: 50px 25px;
+}
+
+.produtos .box:hover {
+  box-shadow: 0px 0px 35px 1px rgba(0, 0, 0, 0.75);
+  transition-duration: 1s;
+}
+
+.produtos .box img {
+  width: 100%;
+  border-radius: 15px 15px 0px 0px;
+}
+
+/* FIM - Produtos */
 /* INICIO - Footer*/
 footer {
   background-color: #0b3350;
   text-align: center;
   align-items: center;
+  position: absolute;
+  width: 100%;
 }
 
 .footer {
@@ -338,14 +384,12 @@ footer {
 .emailboxfotter:focus {
   background-color: rgb(231, 231, 203);
   transition-duration: 1s;
-  outline: none;
 }
 
 .subscribeboxfotter:hover {
   background-color: rgb(231, 231, 203);
   transition-duration: 1s;
   color: black;
-  outline: none;
 }
 
 .subscribeboxfotter {
@@ -429,23 +473,194 @@ footer {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-
-.priceDetalhes {
+.priceDetalhes{
   text-align: left;
   color: #500b0b;
   margin-top: 20px;
 }
-
-.descricaoDetalhes {
+.descricaoDetalhes{
   margin-top: 20px;
   text-align: left;
 }
-
-.pNameDetalhes {
+.pNameDetalhes{
   text-align: left;
 }
+/* FIM - Detalhes */
 
-/* FIM - Detalhes*/
+/* INICIO - Contactos */
+.coluna50{
+  margin-top: 30px;
+  min-width: 50%; 
+  margin: 8px;
+}
+.emailcontact{
+  margin-top: 20px;
+  border-radius: 6px;
+  border: none;
+  height: 35px;
+  padding-left: 10px;
+}
+.questionarea{
+  padding-top: 10px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: none;
+  padding-left: 10px;
+  resize: none;
+}
+.sendbutton{
+  width: 40%;
+  border: none;
+  background-color: #500b0b;
+  color: white;
+  border-radius: 6px;
+  height: 44px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.mapa{
+  margin-top: 20px;
+  
+  border-radius: 100px;
+}
+.contactmargin{
+  margin-top: 30px;
+}
+/* FIM - Contactos */
+/* INICIO - Checkout */
+.checkoutmargin{
+  margin-top: 30px;
+}
+.lE{
+  width: 100%;
+  text-align: center;
+  margin-right: 10px;
+}
+.lD{
+  width: 100%;
+  text-align: center;
+}
+.checkoutFlex{
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.checkoutTitle{
+  text-align: center;
+  margin-top: 30px;
+}
+.firstName{
+  margin-top: 20px;
+  border-radius: 6px;
+  border: none;
+  width: 47%;
+  height: 35px;
+  padding-left: 10px;
+  margin-left: 2px;
+}
+.lastName{
+  margin-top: 20px;
+  border-radius: 6px;
+  border: none;
+  width: 47%;
+  height: 35px;
+  padding-left: 10px;
+  margin-right: 2px;
+}
+.company{
+  margin-top: 20px;
+  border-radius: 6px;
+  border: none;
+  width: 47%;
+  height: 35px;
+  padding-left: 10px;
+}
+.road{
+  margin-top: 20px;
+  border-radius: 6px;
+  border: none;
+  height: 35px;
+  padding-left: 10px;
+  width: 65%;
+  margin-left: 2px;
+}
+.phoneNumber{
+  margin-top: 20px;
+  border-radius: 6px;
+  border: none;
+  height: 35px;
+  padding-left: 10px;
+  width: 29%;
+  margin-right: 2px;
+}
+.postalCode{
+  margin-top: 20px;
+  border-radius: 6px;
+  border: none;
+  width: 47%;
+  height: 35px;
+  padding-left: 10px;
+  margin-left: 2px;
+}
+.city{
+  margin-top: 20px;
+  border-radius: 6px;
+  border: none;
+  width: 47%;
+  height: 35px;
+  padding-left: 10px;
+  margin-right: 2px;
+}
+.flex{
+  display: flex;
+  justify-content: space-between;
+}
+.faturationCheck{
+  transform: scale(1.5);
+  padding: 10px;
+  float: left;
+  background: black;
+  margin-top: 27px;
+  margin-left: 7px;
+}
+.textFaturation{
+  float: left;
+  margin-top: 25px;
+  margin-left: 17px;
+}
+.carrinhoCheckout{
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  
+}
+.imagemCheckout{
+  width: 70px;
+}
+.imagemCheckoutDiv{
+  text-align: left;
+}
+.nameProductCheckout{
+
+}
+.priceProductCheckout{
+
+}
+.productCheckout{
+  width: 100%;
+  background-color: white;
+  border: 1px solid #0b3350;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+hr{
+  box-shadow: none;
+}
+/* FIM - Checkout */
 /* COMEÇO - Media queries */
 @media screen and (max-width: 1000px) {
   .marcainbanner {

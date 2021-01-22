@@ -9,43 +9,44 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
 </head>
 <body>
-    <nav>
-        <div class="nav">
-          <input type="text" class="searchTerm" placeholder="O que pretende procurar?">
-          <button type="submit" class="searchButton"><i class="fas fa-search"></i></button>
-          <div id="mySidenav" class="sidenav">
-            <p class="nomedaloja">Lorem Ipsum</p>
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <div class="menu">
-              <a href="#">Acerca</a>
-              <a href="#" onclick="myFunction()" class="dropbtn">Produtos</a>
-              <a href="#">Opiniões</a>
-              <a href="#">Carrinho</a>
-              <a href="#">Login</a>
-            </div>
-            <div class="socialrow">
-              <ul>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-              </ul>
-            </div>
-          </div>
-          <span class="menubutton" onclick="openNav()">&#9776; </span>
+  <nav>
+    <div class="nav">
+      <input type="text" class="searchTerm" placeholder="O que pretende procurar?">
+      <button type="submit" class="searchButton"><i class="fas fa-search"></i></button>
+      <div id="mySidenav" class="sidenav">
+        <p class="nomedaloja">Lorem Ipsum</p>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="menu">
+          <a href="#">Acerca</a>
+          <a href="#" onclick="myFunction()" class="dropbtn">Produtos</a>
+          <a href="#">Opiniões</a>
+          <a href="#">Carrinho</a>
+          <a href="#">Login</a>
         </div>
-        <div class="dropdown">
-          <div id="myDropdown" class="dropdown-content">
-            <a href="#" class="dropdown-first">Processadores</a>
-            <a href="#">Motherboards</a>
-            <a href="#">Placas gráficas</a>
-            <a href="#">Memória RAM</a>
-            <a href="#">Fonte de alimentação</a>
-            <a href="#">Caixas</a>
-            <a href="#" class="dropdown-last">Armazenamento</a>
-          </div>
+        <div class="socialrow">
+          <ul>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          </ul>
         </div>
-    </nav>
+      </div>
+      <span class="menubutton" onclick="openNav()">&#9776; </span>
+    </div>
+    <div class="dropdown">
+      <div id="myDropdown" class="dropdown-content">
+        <a href="produtos.html" class="dropdown-first">Todos</a>
+        <a href="#">Processadores</a>
+        <a href="#">Motherboards</a>
+        <a href="#">Placas gráficas</a>
+        <a href="#">Memória RAM</a>
+        <a href="#">Fonte de alimentação</a>
+        <a href="#">Caixas</a>
+        <a href="#" class="dropdown-last">Armazenamento</a>
+      </div>
+    </div>
+  </nav>
     <main>
       <div class="container">
       <div class="row">
@@ -56,19 +57,19 @@
           
             <div class="moreimages">
               <div class="column">
-                <img src="img/produtos/rtx3090_msi.jpg" style="width:100%" onclick="myFunction(this);">
+                <img src="img/produtos/rtx3090_msi.jpg" style="width:100%" onclick="switchimg(this);">
               </div>
               <div class="column">
-                <img src="img/produtos/rtx3090_msi(1).jpg" style="width:100%" onclick="myFunction(this);">
+                <img src="img/produtos/rtx3090_msi(1).jpg" style="width:100%" onclick="switchimg(this);">
               </div>
               <div class="column">
-                <img src="img/produtos/rtx3090_msi(2).jpg" style="width:100%" onclick="myFunction(this);">
+                <img src="img/produtos/rtx3090_msi(2).jpg" style="width:100%" onclick="switchimg(this);">
               </div>
               <div class="column">
-                <img src="img/produtos/rtx3090_msi(3).jpg" style="width:100%" onclick="myFunction(this);">
+                <img src="img/produtos/rtx3090_msi(3).jpg" style="width:100%" onclick="switchimg(this);">
               </div>
               <div class="column">
-                <img src="img/produtos/rtx3090_msi(4).jpg" style="width:100%" onclick="myFunction(this);">
+                <img src="img/produtos/rtx3090_msi(4).jpg" style="width:100%" onclick="switchimg(this);">
               </div>
             </div>
           
@@ -116,12 +117,5 @@
     </footer>
     <script type="text/javascript" src="https://kit.fontawesome.com/03e7a29ebe.js"></script>
     <script type="text/javascript" src="scripts/app.js"></script>
-    <script>
-      function myFunction(imgs) {
-        var expandImg = document.getElementById("expandedImg");
-        expandImg.src = imgs.src;  
-        expandImg.parentElement.style.display = "block";
-      }
-    </script>
 </body>
 </html>

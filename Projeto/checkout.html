@@ -54,44 +54,65 @@
         </div>
       </div>
     </nav>
-    <div class="banner">
-      <img src="img/banner.jpg">
-      <h1>Lorem Ipsum</h1>
-    </div>
   </header>
-  <main>
-    <div class="destaques">
-      <h1>Em destaque</h1>
-      <a href="#">
-        <div class="box"><img src="img/produtos/rtx3090_msi.jpg">
-          <p>Placa Gráfica MSI GeForce RTX 3090</p>
-          <hr>
-          <p class="preco">1744,90€</p>
+    <main>
+        <div class="">
+          <h1 class="checkoutTitle">Checkout</h1>
+          <div class="row checkoutmargin checkoutFlex">
+              <div class="lE">
+                <h3>Envio</h3>
+                <div class="flex">
+                    <input type="text" placeholder="Primeiro nome" class=" firstName" required>
+                    <input type="text" placeholder="Ultimo nome" class="lastName" required>
+                </div>
+                    <input type="text" placeholder="Empresa" class="width100 emailcontact" required>
+                <div class="flex">
+                    <input type="text" placeholder="Rua" class="road" required>
+                    <input type="text" placeholder="Número" class="phoneNumber" required>
+                </div>
+                <div class="flex">
+                    <input type="text" placeholder="Código postal" class="postalCode" required>
+                    <input type="text" placeholder="Cidade" class="city" required>
+                </div>
+                <input type="text" placeholder="Telemovel" class="width100 emailcontact" required>
+                <input type="checkbox" class="faturationCheck"><span class="textFaturation">A morada de faturação é igual à morada de expedição</span>
+                <button type="submit" class="sendbutton">Guardar</button>
+              </div>
+            <div class="lD">
+                <h3>Carrinho</h3>
+                <div class="productCheckout">
+                    <div class="carrinhoCheckout">
+                        <div class="imagemCheckoutDiv">
+                            <img src="img/produtos/rtx3090_msi.jpg", class="imagemCheckout">
+                        </div>
+                        <div class="nameProductCheckout">
+                            <a href="detalhes_produto.html"><span>Placa Gráfica MSI GeForce RTX 3090</span></a>
+                        </div>
+                        <div class="priceProductCheckout">
+                            <span>1744,90€</span>
+                        </div>
+                        <hr>
+                    </div>
+                    <hr>
+                    <div class="carrinhoCheckout">
+                        <div class="imagemCheckoutDiv">
+                            <img src="img/produtos/rtx3090_msi.jpg", class="imagemCheckout">
+                        </div>
+                        <div class="nameProductCheckout">
+                            <a href="detalhes_produto.html"><span>Placa Gráfica MSI GeForce RTX 3090</span></a>
+                        </div>
+                        <div class="priceProductCheckout">
+                            <span>1744,90€</span>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+                
+            </div>
+          </div>
+  
         </div>
-      </a>
-      <a href="#">
-        <div class="box"><img src="img/produtos/i9_intel.jpg">
-          <p>Processador Intel Core i9-9900K </p>
-          <hr>
-          <p class="preco">399,00€</p>
-        </div>
-      </a>
-      <a href="#">
-        <div class="box"><img src="img/produtos/8gb_hyperx.jpg">
-          <p>RAM HyperX Predator 8GB</p>
-          <hr>
-          <p class="preco">50,50€</p>
-        </div>
-      </a>
-      <a href="#">
-        <div class="box"><img src="img/produtos/z390-a_msi.jpg">
-          <p>Motherboard MSI Z390-A</p>
-          <hr>
-          <p class="preco">114,90€</p>
-        </div>
-      </a>
-    </div>
-  </main>
+    </main>
   <footer>
     <div class="footer">
       <div class="row">
