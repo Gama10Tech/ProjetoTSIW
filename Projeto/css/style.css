@@ -23,12 +23,11 @@ main{
   margin-top:50px;
   min-height: 68vh;
 }
-}
+
 /*Geral*/
-.container {
-  margin-left: 20%;
-  margin-right: 20%;
-  margin-top: 30px;
+.container{
+  margin-left: 20% !important;
+  margin-right: 20% !important;
   text-align: center;
 }
 .width100{
@@ -643,12 +642,7 @@ footer {
 .imagemCheckoutDiv{
   text-align: left;
 }
-.nameProductCheckout{
 
-}
-.priceProductCheckout{
-
-}
 .productCheckout{
   width: 100%;
   background-color: white;
