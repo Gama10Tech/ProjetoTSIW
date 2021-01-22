@@ -9,7 +9,6 @@ html {
 }
 
 body {
-  height: 100%;
   background-color: rgb(231, 231, 231);
 }
 
@@ -605,95 +604,7 @@ hr {
 }
 
 /* FIM - Checkout */
-/* INICIO - Footer*/
-footer {
-  background-color: #0b3350;
-  text-align: center;
-  align-items: center;
-  position: absolute;
-  width: 100%;
-}
 
-.footer {
-  display: flex;
-  max-width: 1380px;
-  flex-wrap: nowrap;
-  background-color: #0b3350;
-  color: white;
-  text-align: center;
-  margin: auto;
-  padding: 30px;
-}
-
-.footer a {
-  color: white;
-}
-
-.socials>a>i {
-  margin: 0;
-  padding-right: 10px !important;
-}
-
-.row {
-  width: 100%;
-  display: flex;
-}
-
-.coluna {
-  width: 25%;
-  max-width: 25%;
-  overflow: hidden;
-  text-align: left;
-  line-height: 35px;
-  font-size: 12px;
-}
-
-.coluna i {
-  font-size: 20px;
-  margin: 10px;
-}
-
-.emailboxfotter {
-  width: 100%;
-  padding: 10px;
-  display: block;
-  border: none;
-  background-color: #f4f4f4;
-  color: black;
-  font-size: 14px;
-  line-height: normal;
-  box-sizing: border-box;
-  height: auto;
-  border-radius: 10px;
-  transition-duration: 1s;
-}
-
-.emailboxfotter:focus {
-  background-color: rgb(231, 231, 203);
-  transition-duration: 1s;
-}
-
-.subscribeboxfotter:hover {
-  background-color: rgb(231, 231, 203);
-  transition-duration: 1s;
-  color: black;
-}
-
-.subscribeboxfotter {
-  margin-top: 5px;
-  min-width: 40%;
-  padding: 7px;
-  font-size: 15px;
-  border: 0px;
-  box-shadow: none;
-  background-color: #500b0b;
-  color: white;
-  border-radius: 10px;
-  transition-duration: 1s;
-  cursor: pointer;
-}
-
-/* FIM - Footer*/
 /* INICIO - Detalhes*/
 .column {
   float: left;
@@ -777,11 +688,13 @@ footer {
 }
 
 /* FIM - Detalhes*/
+
 /* COMEÇO - Página de login */
+
 .login-page {
   width: 80%;
+  height: 100%;
   margin: 0 auto;
-  margin-bottom: 75px;
 }
 
 .login-page>h1 {
@@ -793,6 +706,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .login-page input {
@@ -805,7 +719,7 @@ footer {
 
 .login-page input[type=submit] {
   margin-top: 30px;
-  height: 35px;
+  height: 45px;
   background-color: #0b3350;
   color: white;
 }
@@ -816,13 +730,139 @@ footer {
 }
 
 .login-wrapper {
+  height: 350px;
   padding: 20px;
   background-color: white;
   border-radius: 5px;
   box-shadow: 5px 5px 30px #0b3350;
 }
 
+.login-with ul,
+.login-with ul li {
+  margin: 0;
+  padding: 0;
+}
+
+.login-with ul {
+  list-style-type: none;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.login-with ul li {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.login-with ul li:hover {
+  cursor: pointer;
+  background-color: #d6d6d6;
+}
+
+.login-with ul li span {
+  font-size: 12px;
+  font-weight: bold;
+}
+
 /* FIM - Página de login */
+
+/* INICIO - Footer*/
+footer {
+  background-color: #0b3350;
+  text-align: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.footer {
+  display: flex;
+  max-width: 1380px;
+  flex-wrap: nowrap;
+  background-color: #0b3350;
+  color: white;
+  text-align: center;
+  margin: auto;
+  padding: 30px;
+}
+
+.footer a {
+  color: white;
+}
+
+.socials>a>i {
+  margin: 0;
+  padding-right: 10px !important;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+}
+
+.coluna {
+  width: 25%;
+  max-width: 25%;
+  overflow: hidden;
+  text-align: left;
+  line-height: 35px;
+  font-size: 12px;
+}
+
+.coluna i {
+  font-size: 20px;
+  margin: 10px;
+}
+
+.emailboxfotter {
+  width: 100%;
+  padding: 10px;
+  display: block;
+  border: none;
+  background-color: #f4f4f4;
+  color: black;
+  font-size: 14px;
+  line-height: normal;
+  box-sizing: border-box;
+  height: auto;
+  border-radius: 10px;
+  transition-duration: 1s;
+}
+
+.emailboxfotter:focus {
+  background-color: rgb(231, 231, 203);
+  transition-duration: 1s;
+}
+
+.subscribeboxfotter:hover {
+  background-color: rgb(231, 231, 203);
+  transition-duration: 1s;
+  color: black;
+}
+
+.subscribeboxfotter {
+  margin-top: 5px;
+  min-width: 40%;
+  padding: 7px;
+  font-size: 15px;
+  border: 0px;
+  box-shadow: none;
+  background-color: #500b0b;
+  color: white;
+  border-radius: 10px;
+  transition-duration: 1s;
+  cursor: pointer;
+}
+
+/* FIM - Footer*/
+
 /* COMEÇO - Media queries */
 @media screen and (max-width: 430px) {
   .destaques {
