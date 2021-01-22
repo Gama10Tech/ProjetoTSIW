@@ -1,3 +1,11 @@
+var pop=document.getElementById("popup");
+var counter = 5;
+var id;
+function ClosePop(){
+  pop.style.opacity="0";
+  counter=5
+}
+
 // Sub-lista do menu "Produtos"
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show")
@@ -13,6 +21,20 @@ window.onclick = function(event) {
       }
     }
   }
+}
+
+// Adicionar ao "carrinho"
+function AddToCart(){
+  pop.style.opacity="1";
+  id = setInterval(function() {
+    counter--;
+    if(counter < 0) {
+        clearInterval(id);
+        
+        pop.style.opacity="0";
+        counter=5;
+    }
+  }, 1000);
 }
 
 // Abrir a navbar

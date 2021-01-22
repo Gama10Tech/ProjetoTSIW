@@ -78,10 +78,14 @@
           <h1 class="pNameDetalhes">Placa Gráfica MSI GeForce RTX 3090</h1>
           <p class="descricaoDetalhes">As placas gráficas GeForce RTX™ Série 30 oferecem o melhor desempenho para jogadores e criadores. Elas são alimentados por Ampere - a arquitetura RTX de 2ª geração da NVIDIA - com novos núcleos RT, núcleos Tensor e multiprocessadores de streaming para gráficos Ray Tracing mais realistas e recursos de AI de ponta.</p>
           <h2 class="priceDetalhes">1744,90€</h2>
-          <button type="submit" class="addcart">Adicionar ao carrinho</button>
+          <button type="submit" class="addcart" onclick="AddToCart()">Adicionar ao carrinho</button>
         </div>
       </div>
 
+      </div>
+      <div class="alert success" id="popup">
+        <span class="closebtn" id="close" onclick="ClosePop()">&times;</span>  
+        Produto adicionado com sucesso
       </div>
     </main>
     <footer>

@@ -62,21 +62,25 @@
               <div class="lE">
                 <h3>Envio</h3>
                 <div class="flex">
-                    <input type="text" placeholder="Primeiro nome" class=" firstName" required>
-                    <input type="text" placeholder="Ultimo nome" class="lastName" required>
+                  <input type="text" placeholder="Primeiro nome *" class=" firstName" required>
+                  <input type="text" placeholder="Ultimo nome *" class="lastName" required>
                 </div>
-                    <input type="text" placeholder="Empresa" class="width100 emailcontact" required>
+                <div class="companyClass">
+                  <input type="text" placeholder="Empresa" class="width100 company">
+                </div>
+                    
                 <div class="flex">
-                    <input type="text" placeholder="Rua" class="road" required>
-                    <input type="text" placeholder="Número" class="phoneNumber" required>
+                  <input type="text" placeholder="Rua *" class="road" required>
+                  <input type="text" placeholder="Número *" class="number" required>
                 </div>
                 <div class="flex">
-                    <input type="text" placeholder="Código postal" class="postalCode" required>
-                    <input type="text" placeholder="Cidade" class="city" required>
+                  <input type="text" placeholder="Código postal *" class="postalCode" required>
+                  <input type="text" placeholder="Cidade *" class="city" required>
                 </div>
-                <input type="text" placeholder="Telemovel" class="width100 emailcontact" required>
+                <div class="phoneNumberClass">
+                  <input type="text" placeholder="Telemovel *" class="width100 phoneNumber" required>
+                </div>
                 <input type="checkbox" class="faturationCheck"><span class="textFaturation">A morada de faturação é igual à morada de expedição</span>
-                <button type="submit" class="sendbutton">Guardar</button>
               </div>
             <div class="lD">
                 <h3>Carrinho</h3>
@@ -91,7 +95,6 @@
                         <div class="priceProductCheckout">
                             <span>1744,90€</span>
                         </div>
-                        <hr>
                     </div>
                     <hr>
                     <div class="carrinhoCheckout">
@@ -104,11 +107,29 @@
                         <div class="priceProductCheckout">
                             <span>1744,90€</span>
                         </div>
-                        <hr>
+                    </div>
+                    <hr>
+                    <div class="total">
+                      <div class="totalText">
+                        Total:  
+                      </div>
+                      <div class="totalPrice">
+                        3489,8€
+                      </div>
                     </div>
                 </div>
-
+                <div class="paypalCheckoutDiv">
+                  <button type="submit" class="paypalCheckout">
+                    Paypal
+                  </button>
+                </div>
+                <div class="creditCardCheckoutDiv">
+                  <button type="submit" class="creditCardCheckout">
+                    Cartão de crédito
+                  </button>
+                </div>
             </div>
+              
           </div>
 
         </div>
