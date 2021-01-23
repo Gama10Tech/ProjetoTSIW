@@ -58,38 +58,55 @@
     </nav>
   </header>
   <main>
-    <div class="login-page">
-      <h1>Iniciar Sessão</h1>
-      <form method="post" onsubmit="return handleAuthenticationSubmit()">
-        <div class="login-wrapper">
-          <div class="login-email">
-            <label for="email">E-mail:</label><br>
-            <input type="email" name="email" required>
+    <div class="edit-profile-page">
+      <h1>Editar Perfil</h1>
+      <form method="post" onsubmit="return handleEditProfileSubmit()">
+        <div class="edit-wrapper">
+          <div class="edit-left-side">
+            <div>
+              <label for="p-nome">Primeiro nome:</label><br>
+              <input type="text" name="p-nome" value="John" required>
+            </div>
+            <br>
+            <div>
+              <label for="u-nome">Último nome:</label><br>
+              <input type="text" name="u-nome" value="Doe" required>
+            </div>
+            <br>
+            <div>
+              <label for="email">E-mail:</label><br>
+              <input type="email" name="email" value="john_doe@example.pt" required>
+            </div>
+            <br>
+            <div>
+              <label for="password">Password:</label><br>
+              <input id="pw" type="password" name="password" value="12345" required>
+            </div>
+            <br>
+            <div >
+              <label for="confirm-password">Confirmar Password:</label><br>
+              <input id="cpw" type="password" name="confirm-password" value="12345" required>
+            </div>
           </div>
-          <br>
-          <div class="login-password">
-            <label for="password">Password:</label><br>
-            <input type="password" name="password">
+          <div class="edit-right-side">
+            <div class="num-telefone">
+              <label for="num-telefone">N.º de telemóvel:</label><br>
+              <input type="number" name="num-telefone" value="912345678"  required>
+            </div>
+            <br>
+            <div class="pais-residencia">
+              <label for="pais-residencia">País de residência:</label><br>
+              <input type="text" name="pais-residencia" value="Portugal" required>
+            </div>
+            <br>
+            <div class="register-data-nasc">
+              <label for="data-nasc">Data de nascimento:</label><br>
+              <input type="date" name="data-nasc" value="1980-01-01" required>
+            </div>
           </div>
-          <div>
-            <input type="submit" name="login" value="Login" required>
-          </div>
-          <div class="login-with">
-            <ul>
-              <li>
-                <i class="fab fa-google"></i>&nbsp;&nbsp;
-                <span>Sign in with Google</span>
-              </li>
-              <li>
-                <i class="fab fa-facebook-f"></i>&nbsp;&nbsp;
-                <span>Sign in with Facebook</span>
-              </li>
-              <li>
-                <i class="fab fa-apple"></i>&nbsp;&nbsp;
-                <span>Sign in with Apple</span>
-              </li>
-            </ul>
-          </div>
+        </div>
+        <div>
+          <input type="submit" name="guardar-alteracoes" value="Guardar Alterações">
         </div>
       </form>
     </div>

@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="css\style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <title>Lorem Ipsum - Iniciar Sessão</title>
+  <title>Lorem Ipsum - Carrinho de Compras</title>
 </head>
 
 <body id="for-login">
@@ -58,40 +58,62 @@
     </nav>
   </header>
   <main>
-    <div class="login-page">
-      <h1>Iniciar Sessão</h1>
-      <form method="post" onsubmit="return handleAuthenticationSubmit()">
-        <div class="login-wrapper">
-          <div class="login-email">
-            <label for="email">E-mail:</label><br>
-            <input type="email" name="email" required>
+    <div class="shopping-cart-page">
+      <h1>Carrinho de Compras</h1>
+      <div class="shopping-cart-wrapper">
+        <div>
+          <div class="scart-produto">
+            <div class="scart-imagem">
+              <img src="img/produtos/rtx3090_msi.jpg" class="imagemCheckout">
+            </div>
+            <div class="scart-nome">
+              <p>Placa Gráfica MSI GeForce RTX 3090</p>
+            </div>
+            <div class="scart-quantidade">
+              <input type="hidden" value="174490">
+              <input onchange="atualizarCarrinho(this)" type="number" name="quant" value="1">
+            </div>
+            <div class="scart-preco">
+              <span class="scart-preco-produto">1744,90€</span>
+            </div>
+            <div class="scart-remover">
+              <button type="button" name="button" onclick="removerProduto(this)"><i class="fas fa-trash"></i></button>
+            </div>
           </div>
-          <br>
-          <div class="login-password">
-            <label for="password">Password:</label><br>
-            <input type="password" name="password">
-          </div>
-          <div>
-            <input type="submit" name="login" value="Login" required>
-          </div>
-          <div class="login-with">
-            <ul>
-              <li>
-                <i class="fab fa-google"></i>&nbsp;&nbsp;
-                <span>Sign in with Google</span>
-              </li>
-              <li>
-                <i class="fab fa-facebook-f"></i>&nbsp;&nbsp;
-                <span>Sign in with Facebook</span>
-              </li>
-              <li>
-                <i class="fab fa-apple"></i>&nbsp;&nbsp;
-                <span>Sign in with Apple</span>
-              </li>
-            </ul>
+          <hr>
+          <div class="scart-produto">
+            <div class="scart-imagem">
+              <img src="img/produtos/i9_intel.jpg" class="imagemCheckout">
+            </div>
+            <div class="scart-nome">
+              <p>Processador Intel Core i9-9900K</p>
+            </div>
+            <div class="scart-quantidade">
+              <input type="hidden" value="39900">
+              <input onchange="atualizarCarrinho(this)" type="number" name="quant" value="1">
+            </div>
+            <div class="scart-preco">
+              <span class="scart-preco-produto">399,00€</span>
+            </div>
+            <div class="scart-remover">
+              <button type="button" name="button" onclick="removerProduto(this)"><i class="fas fa-trash"></i></button>
+            </div>
           </div>
         </div>
-      </form>
+        <hr>
+        <div class="scart-total">
+          <div class="scart-texto-total">
+            <p>Total</p>
+          </div>
+          <div class="scart-texto-preco">
+            <p id="scart-final-price">2143,90€</p>
+          </div>
+        </div>
+      </div>
+      <div class="shopping-cart-buttons">
+        <button type="button" name="button" onclick="window.location.href = 'produtos.html'">Continuar a Comprar</button>
+        <button type="button" name="button" onclick="window.location.href = 'checkout.html'">Finalizar Compra</button>
+      </div>
     </div>
   </main>
   <footer>

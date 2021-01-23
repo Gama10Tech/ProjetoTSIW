@@ -32,26 +32,78 @@ document.getElementsByClassName("nomedaloja")[0].addEventListener("click", funct
 
 // Lidar com a submissão do formulário de login
 function handleAuthenticationSubmit() {
+  alert("Sessão iniciada com sucesso!")
   window.location.href = "index.html"
   return false
 }
 
 // Ver imagens na página de detalhes de produto
 function switchimg(imgs) {
-  var expandImg = document.getElementById("expandedImg");
-  expandImg.src = imgs.src;
-  expandImg.parentElement.style.display = "block";
+  var expandImg = document.getElementById("expandedImg")
+  expandImg.src = imgs.src
+  expandImg.parentElement.style.display = "block"
 }
 
 // Registo
 function handleRegisterSubmit() {
-  alert("yo")
   if (document.getElementById("pw").value == document.getElementById("cpw").value) {
-    // Register successful
+    alert("Registo efetuado com sucesso!")
+    window.location.href = "login.html"
   } else {
-    // Not successful
+    alert("As passwords não coincidem")
   }
   return false
+}
+
+// Editar Perfil
+function handleEditProfileSubmit() {
+  if (document.getElementById("pw").value == document.getElementById("cpw").value) {
+    alert("Dados guardados com sucesso!")
+    window.location.href = "index.html"
+  } else {
+    alert("As passwords não coincidem")
+  }
+  return false
+}
+
+// Carrinho de compras
+function atualizarCarrinho(a) {
+  if (a.value < 1) {
+    a.value = 1
+  }
+
+  let priceElement = a.parentElement.nextSibling.nextSibling.firstElementChild
+  let originalPrice = a.previousSibling.previousSibling
+  let newPrice = parseInt(originalPrice.value) * parseInt(a.value)
+  priceElement.innerHTML = String(newPrice).substring(0, String(newPrice).length - 2) + "," + String(newPrice).slice(-2) + "€"
+  let precoTotal = 0
+  if (document.getElementsByClassName("scart-preco-produto").length > 0) {
+    for (let i = 0; i < document.getElementsByClassName("scart-preco-produto").length; i++) {
+      precoTotal += parseInt(document.getElementsByClassName("scart-preco-produto")[i].innerHTML.replace("€", "").replace(",", ""))
+    }
+    document.getElementById("scart-final-price").innerHTML = String(precoTotal).substring(0, String(precoTotal).length - 2) + "," + String(precoTotal).slice(-2) + "€"
+  } else {
+    document.getElementById("scart-final-price").innerHTML = "0,00€"
+  }
+}
+
+// Carrinho de compras - remover produto
+function removerProduto(a) {
+  a.parentElement.parentElement.remove()
+  document.getElementsByTagName("hr")[0].remove()
+  if (document.getElementsByClassName("scart-quantidade").length > 0) {
+    let precoTotal = 0
+    if (document.getElementsByClassName("scart-preco-produto").length > 0) {
+      for (let i = 0; i < document.getElementsByClassName("scart-preco-produto").length; i++) {
+        precoTotal += parseInt(document.getElementsByClassName("scart-preco-produto")[i].innerHTML.replace("€", "").replace(",", ""))
+      }
+      document.getElementById("scart-final-price").innerHTML = String(precoTotal).substring(0, String(precoTotal).length - 2) + "," + String(precoTotal).slice(-2) + "€"
+    } else {
+      document.getElementById("scart-final-price").innerHTML = "0,00€"
+    }
+  } else {
+    document.getElementById("scart-final-price").innerHTML = "0,00€"
+  }
 }
 
 // Checkout
