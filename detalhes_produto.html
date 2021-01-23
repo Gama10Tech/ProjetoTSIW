@@ -57,21 +57,24 @@
   </nav>
     <main>
       <div class="container">
-      <div class="row">
-        <div class="leftdetalhes">
-          <div class="imgDetalhes">
-            <img id="expandedImg" style="width:100%">
+        <div class="row">
+          <div class="leftdetalhes">
+            <div class="imgDetalhes">
+              <img id="expandedImg" style="width:100%">
+            </div>
+              <div class="moreimages"></div>
           </div>
-            <div class="moreimages"></div>
-        </div>
-        <div class="rightdetalhes">
-          <h1 class="pNameDetalhes"></h1>
-          <p class="descricaoDetalhes"></p>
-          <h2 class="priceDetalhes"></h2>
-          <button type="submit" class="addcart">Adicionar ao carrinho</button>
+          <div class="rightdetalhes">
+            <h1 class="pNameDetalhes"></h1>
+            <p class="descricaoDetalhes"></p>
+            <h2 class="priceDetalhes"></h2>
+            <button type="submit" class="addcart" onclick="AddToCart()">Adicionar ao carrinho</button>
+          </div>
         </div>
       </div>
-
+      <div class="alert success" id="popup">
+        <span class="closebtn" onclick="ClosePop()">&times;</span>  
+        O artigo foi adicionado ao carrinho
       </div>
     </main>
     <footer>

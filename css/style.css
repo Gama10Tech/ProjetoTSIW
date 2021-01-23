@@ -210,7 +210,7 @@ hr {
 
 .dropdown .show {
   display: block;
-  top: 106px;
+  top: 103px;
   left: 1px;
   border-radius: 15px;
 }
@@ -1474,6 +1474,7 @@ footer {
 @media screen and (max-width: 830px) {
   .centered {
     top: 70%;
+    font-size: 20px;
   }
 
   .banner {
