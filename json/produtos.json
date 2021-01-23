@@ -1,0 +1,183 @@
+[
+   {
+      "nome":"Placa Gráfica MSI GeForce RTX 3090",
+      "descricao":"As placas gráficas GeForce RTX™ Série 30 oferecem o melhor desempenho para jogadores e criadores. Elas são alimentados por Ampere - a arquitetura RTX de 2ª geração da NVIDIA - com novos núcleos RT, núcleos Tensor e multiprocessadores de streaming para gráficos Ray Tracing mais realistas e recursos de AI de ponta.",
+      "imagens":[
+         {
+            "path":"img/produtos/rtx3090_msi.jpg"
+         },
+         {
+            "path":"img/produtos/rtx3090_msi(1).jpg"
+         },
+         {
+            "path":"img/produtos/rtx3090_msi(2).jpg"
+         },
+         {
+            "path":"img/produtos/rtx3090_msi(3).jpg"
+         },
+         {
+            "path":"img/produtos/rtx3090_msi(4).jpg"
+         }
+      ],
+      "preco":"174490"
+   },
+   {
+      "nome":"Processador Intel Core i9-9900K",
+      "descricao":"O processador i9 9900K amplia todos os recursos que os utilizadores adoram nos CPUs da geração anterior com inovações ainda mais avançadas que oferecem novos níveis de desempenho que o colocam no seu computador em vários formatos. O i9 9900K apresenta todas as mais recentes tecnologias da Intel para permitir que você tenha a melhor experiência em computação, e este CPU em particular é desbloqueado, permitindo que você faça overclock para capacidade adicional em jogos ou de produção.",
+      "imagens":[
+         {
+            "path":"img/produtos/i9_intel.jpg"
+         },
+         {
+            "path":"img/produtos/i9_intel(1).jpg"
+         }
+      ],
+      "preco":"39900"
+   },
+   {
+      "nome":"RAM HyperX Predator 8GB",
+      "descricao":"Dê ao seu computador, com base em AMD ou Intel, a performance ideal para superar os concorrentes com a ultrarrápida HyperX Predator DDR4. Mantanha-se frio e inspire medo nos corações dos seus adversários com o poderoso design do dissipador de calor da Predator DDR4. Aumente a sua taxa de frames por segundo, mantenha a sua streaming estável e avance através das suas edições de vídeo com velocidades de até 4000MHz pareadas com latências CL12–CL19.",
+      "imagens":[
+         {
+            "path":"img/produtos/8gb_hyperx.jpg"
+         },
+         {
+            "path":"img/produtos/8gb_hyperx(1).jpg"
+         },
+         {
+            "path":"img/produtos/8gb_hyperx(2).jpg"
+         }
+      ],
+      "preco":"5050"
+   },
+   {
+      "nome":"Motherboard MSI Z390-A",
+      "descricao":"A tecnologia Core Boost combina o design premium e o projeto de energia otimizado da MSI, que permitem uma entrega de energia mais rápida e sem distorções para o processador com grande precisão. Não só é compatível com CPUs multi-core, mas também cria as condições perfeitas para o seu CPU.",
+      "imagens":[
+         {
+            "path":"img/produtos/z390-a_msi.jpg"
+         },
+         {
+            "path":"img/produtos/z390-a_msi(1).jpg"
+         },
+         {
+            "path":"img/produtos/z390-a_msi(2).jpg"
+         },
+         {
+            "path":"img/produtos/z390-a_msi(3).jpg"
+         },
+         {
+            "path":"img/produtos/z390-a_msi(4).jpg"
+         }
+      ],
+      "preco":"11490"
+   },
+   {
+      "nome":"Cooler CPU Noctua NH-U9S",
+      "descricao":"O NH-U9S é um modelo de topo da Noctua que recebeu mais de 400 prémios e recomendações da imprensa internacional. Conta com uma ventoinha NF-A9 com suporte para PWM com controlo de velocidade totalmente automático. Inclui o sistema de montagem multi-socket pro-grade SecuFirm2™ a comprovada pasta térmica NT-H1 da Noctua e garantia total do fabricante de 6 anos. O NH-U9S é uma solução completa de qualidade superior que combina excelente desempenho alta compatibilidade e operação silenciosa.",
+      "imagens":[
+         {
+            "path":"img/produtos/CoolerCPUNoctuaNH-U9S.jpg"
+         },
+         {
+            "path":"img/produtos/CoolerCPUNoctuaNH-U9S(1).jpg"
+         },
+         {
+            "path":"img/produtos/CoolerCPUNoctuaNH-U9S(2).jpg"
+         },
+         {
+            "path":"img/produtos/CoolerCPUNoctuaNH-U9S(3).jpg"
+         },
+         {
+            "path":"img/produtos/CoolerCPUNoctuaNH-U9S(4).jpg"
+         }
+      ],
+      "preco":"6990"
+   },
+   {
+      "nome":"Fonte de Alimentação MSI MPG A650GF",
+      "descricao":"A eficiência da fonte de alimentação influencia diretamente o desempenho do sistema e o consumo de energia. A certificação 80 PLUS Gold promete menor consumo de energia e maior eficiência. A fonte de alimentação MSI MPG é orgulhosamente apoiada por uma garantia limitada de 10 anos, garantindo uma operação fiável de longo prazo.",
+      "imagens":[
+         {
+            "path":"img/produtos/msi650w.jpg"
+         },
+         {
+            "path":"img/produtos/msi650w(1).jpg"
+         },
+         {
+            "path":"img/produtos/msi650w(2).jpg"
+         },
+         {
+            "path":"img/produtos/msi650w(3).jpg"
+         }
+      ],
+      "preco":"12490"
+   },
+   {
+      "nome":"Placa Gráfica MSI Radeon RX 6800",
+      "descricao":"A placa gráfica AMD Radeon™ RX 6800, movida pela arquitetura AMD RDNA™ 2, com 60 unidades de computação aprimoradas e poderosas, 128 MB do mais recente AMD Infinity Cache e memória GDDR6 dedicada, foi projetada para oferecer taxas de frames ultra-elevada e jogos sérios em resolução 4K.",
+      "imagens":[
+         {
+            "path":"img/produtos/msiRX6800_msi.jpg"
+         },
+         {
+            "path":"img/produtos/msiRX6800_msi(1).jpg"
+         },
+         {
+            "path":"img/produtos/msiRX6800_msi(2).jpg"
+         },
+         {
+            "path":"img/produtos/msiRX6800_msi(3).jpg"
+         }
+      ],
+      "preco":"71490"
+   },
+   {
+      "nome":"RAM Corsair Vengeance RGB Pro",
+      "descricao":"As memórias DDR4 VENGEANCE RGB PRO Series com overclocking iluminam o seu PC com luzes RGB dinâmicas multizona enquanto oferece o melhor desempenho. Otimizadas para apresentar um excelente desempenho em momentos de pico com as mais modernas motherboards DDR4 AMD e Intel.",
+      "imagens":[
+         {
+            "path":"img/produtos/RAMCorsairVengeance RGB.jpg"
+         },
+         {
+            "path":"img/produtos/RAMCorsairVengeance RGB(1).jpg"
+         },
+         {
+            "path":"img/produtos/RAMCorsairVengeance RGB(2).jpg"
+         },
+         {
+            "path":"img/produtos/RAMCorsairVengeance RGB(3).jpg"
+         }
+      ],
+      "preco":"9990"
+   },
+   {
+      "nome":"Processador AMD Ryzen 7 5800X",
+      "descricao":"Quando você tem a arquitetura de processador mais avançada do mundo para jogadores e criadores de conteúdo, as possibilidades são infinitas. Esteja você a jogar os jogos mais recentes, a projetar o próximo projeto ou a processador uma enorme quantidade de dados, você precisa de um processador poderoso que possa lidar com tudo - e muito mais. Sem dúvida, os processadores AMD Ryzen™ série 5000 definem o padrão para jogadores e artistas.",
+      "imagens":[
+         {
+            "path":"img/produtos/ryzer7_5800x.jpg"
+         },
+         {
+            "path":"img/produtos/ryzer7_5800x(1).jpg"
+         }
+      ],
+      "preco":"47200"
+   },
+   {
+      "nome":"Motherboard Asus ROG Crosshair VIII",
+      "descricao":"Divirta-se nas raízes dos entusiastas ROG com a ROG Crosshair VII Hero - a motherboard gaming X470 que esconde elevada potência, refrigeração mais inteligente e suporte de memória mais rápida sob uma nova pele furtiva. Carregada com recursos ROG, desde o overclock e refrigeração de um clique até à iluminação Aura Sync que chama a atenção, ela é a base perfeita para o seu equipamento AMD Ryzen™.",
+      "imagens":[
+         {
+            "path":"img/produtos/AsusROGCrosshair.jpg"
+         },
+         {
+            "path":"img/produtos/AsusROGCrosshair(1).jpg"
+         },
+         {
+            "path":"img/produtos/AsusROGCrosshair(2).jpg"
+         }
+      ],
+      "preco":"49900"
+   }
+]

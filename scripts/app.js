@@ -37,6 +37,13 @@ function handleAuthenticationSubmit() {
   return false
 }
 
+// Lidar com a submissão do formulário de opiniões
+function handleOpinionsSubmit() {
+  alert("Mensagem enviada com sucesso!")
+  window.location.href = "index.html"
+  return false
+}
+
 // Ver imagens na página de detalhes de produto
 function switchimg(imgs) {
   var expandImg = document.getElementById("expandedImg")

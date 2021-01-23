@@ -8,6 +8,7 @@
   <meta name="author" content="Gonçalo Gama, Diogo Borges">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="img/icon.svg">
   <link rel="stylesheet" href="css\style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap">
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -59,7 +60,24 @@
   </header>
   <main>
     <div class="opinions-page">
-      <h1>Opiniões</h1>
+      <h1>Envie-nos a sua opinião</h1>
+      <form method="post" onsubmit="return handleOpinionsSubmit()">
+        <div class="opiniao-nome">
+          <label for="opiniao-nome">Nome:</label><br>
+          <input type="text" name="opiniao-nome" required>
+        </div>
+        <div class="opiniao-email">
+          <label for="opiniao-email">E-mail:</label><br>
+          <input type="email" name="opiniao-email" required>
+        </div>
+        <div class="opiniao-mensagem">
+          <label for="opiniao-mensagem">Mensagem:</label>
+          <textarea name="opiniao-mensagem"></textarea>
+        </div>
+        <div class="opiniao-submit">
+          <input type="submit" name="opiniao-submit" value="Enviar">
+        </div>
+      </form>
     </div>
   </main>
   <footer>
