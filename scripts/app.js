@@ -1,3 +1,4 @@
+
 // Sub-lista do menu "Produtos"
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show")
@@ -32,8 +33,19 @@ document.getElementsByClassName("nomedaloja")[0].addEventListener("click", funct
 
 // Lidar com a submissão do formulário de login
 function handleAuthenticationSubmit() {
-  alert("Sessão iniciada com sucesso!")
-  window.location.href = "index.html"
+  let popSu = document.getElementById("popupSucesso");
+  let counter = 2;
+  let id;
+  popSu.style.opacity = "1";
+  id = setInterval(function() {
+    counter--;
+    if (counter < 0) {
+      clearInterval(id);
+      window.location.href = "index.html"
+      counter = 5;
+    }
+  }, 1000);
+  
   return false
 }
 
@@ -51,24 +63,47 @@ function switchimg(imgs) {
   expandImg.parentElement.style.display = "block"
 }
 
-// Registo
+
 function handleRegisterSubmit() {
+  let popSu = document.getElementById("popupSucesso");
+  let popErr = document.getElementById("popupError");
+  let counter = 2;
+  let id;
   if (document.getElementById("pw").value == document.getElementById("cpw").value) {
-    alert("Registo efetuado com sucesso!")
-    window.location.href = "login.html"
+    popSu.style.opacity = "1";
+    id = setInterval(function() {
+      counter--;
+      if (counter < 0) {
+        clearInterval(id);
+        window.location.href = "login.html"
+        counter = 5;
+      }
+    }, 1000);
   } else {
-    alert("As passwords não coincidem")
+    popErr.style.opacity = "1";
   }
   return false
 }
 
 // Editar Perfil
 function handleEditProfileSubmit() {
+  let popSu = document.getElementById("popupSucesso");
+  let popErr = document.getElementById("popupError");
+  let counter = 2;
+  let id;
   if (document.getElementById("pw").value == document.getElementById("cpw").value) {
-    alert("Dados guardados com sucesso!")
-    window.location.href = "index.html"
+    popSu.style.opacity = "1";
+    id = setInterval(function() {
+      counter--;
+      if (counter < 0) {
+        clearInterval(id);
+        window.location.href = "index.html"
+        counter = 5;
+      }
+    }, 1000);
+    
   } else {
-    alert("As passwords não coincidem")
+    popErr.style.opacity = "1";
   }
   return false
 }
@@ -136,3 +171,5 @@ function AddToCart() {
     }
   }, 1000);
 }
+
+
